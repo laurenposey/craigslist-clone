@@ -1,12 +1,11 @@
 <h1>Craigslist Clone</h1>
 
-<h3>community</h3>
-<h3>personals</h3>
-<h3>housing</h3>
-<h3>for sale</h3>
-<h3>services</h3>
-<h3>jobs</h3>
-<h3>gigs</h3>
+<ul>
+  {{#each model as |categories|}}
+     <li>{{category.name}}</li>
+  {{/each}}
+</ul>
+
 
 <hr>
 {{#link-to 'about'}}help{{/link-to}}
