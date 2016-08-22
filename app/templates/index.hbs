@@ -1,13 +1,20 @@
-<h1>Craigslist Clone</h1>
-
+<h3>Posts</h3>
 <ul>
   {{#each model as |post|}}
-    {{post-tile post=post"}}
+    {{post-tile post=post}}
   {{/each}}
 </ul>
 
 {{new-post savePost="savePost"}}
 
 <hr>
-{{#link-to 'about'}}help{{/link-to}}
-{{#link-to 'about'}}about{{/link-to}}
+
+<h3>Categories</h3>
+
+<ul>
+  {{#each model.categories as |category|}}
+    <li>{{category.name}}</li>
+  {{/each}}
+</ul>
+
+<hr>

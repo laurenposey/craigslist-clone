@@ -51,3 +51,25 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+
+
+
+  ,
+  "categories": [{
+    "name": "community"
+  }, {
+    "name": "personals"
+  }, {
+    "name": "discussion forums"
+  }, {
+    "name": "housing"
+  }, {
+    "name": "for sale"
+  }, {
+    "name": "services"
+  }, {
+    "name": "jobs"
+  }, {
+    "name": "gigs"
+  }]
+  }

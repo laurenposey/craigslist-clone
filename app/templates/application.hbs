@@ -1,1 +1,11 @@
-{{outlet}}
+<div class="container">
+  <header>
+    <h2>{{#link-to 'index'}}craigslist{{/link-to}}</h2>
+  </header>
+    {{outlet}}
+  <hr>
+  <footer>
+    {{#link-to 'about'}}help{{/link-to}}
+    {{#link-to 'about'}}about{{/link-to}}
+  </footer>
+</div>
