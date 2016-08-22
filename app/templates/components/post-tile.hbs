@@ -1,11 +1,9 @@
 
 <li>
-  {{post.title}}
+  {{#link-to 'post' post.id}} {{post.author}}'s {{post.title}} in {{post.location}} {{/link-to}}
   {{#if isImageShowing}}
     <p><img src={{post.image}} alt={{post.title}} {{action 'imageHide'}}/></p>
   {{else}}
     <button {{action 'imageShow'}}>Show Image</button>
   {{/if}}
-  {{update-post post=post update="update"}}
-  <button {{action 'delete' post}}>Delete</button>
 </li>

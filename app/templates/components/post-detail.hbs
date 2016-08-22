@@ -1,1 +1,10 @@
-{{yield}}
+Located in {{post.location}}
+{{post.title}}
+{{post.content}}
+{{post.author}}
+<br>
+<p><img src="{{post.image}}" alt="{{post.title}}" /></p>
+<br>
+{{post.contactInfo}}
+<hr>
+<button {{action 'delete' post}}>Delete</button>
