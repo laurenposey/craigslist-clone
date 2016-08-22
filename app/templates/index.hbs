@@ -1,8 +1,8 @@
 <h1>Craigslist Clone</h1>
 
 <ul>
-  {{#each model as |categories|}}
-     <li>{{category.name}}</li>
+  {{#each model as |post|}}
+     {{post-tile post=post}}
   {{/each}}
 </ul>
 

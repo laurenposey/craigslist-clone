@@ -1,0 +1,10 @@
+
+<li>{{post.title}}</li>
+{{#if isImageShowing}}
+  <p><img src={{post.image}} alt={{post.title}} {{action 'imageHide'}}/></p>
+{{else}}
+  <button {{action 'imageShow'}}>Show Image</button>
+{{/if}}
+<li>{{post.content}}</li>
+<li>{{post.contactInfo}}</li>
+<li>{{post.location}}</li>
